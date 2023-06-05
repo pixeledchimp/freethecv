@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { AppState } from '../../store/store'
 
 // Props interface
-export interface PresentationProps {
+export interface PresentationState {
   title: string
 }
 
@@ -26,7 +26,7 @@ export type PresentationActions = ReturnType<
   typeof PresentationUpdateTitleActionCreator
 >
 
-export const initialPresentationComponentState: PresentationProps = {
+export const initialPresentationComponentState: PresentationState = {
   title: '',
 }
 
@@ -36,7 +36,7 @@ export const PresentationActionsReducer = (
 ) => {
   switch (action.type) {
     case 'PRESENTATION_UPDATE_TITLE':
-      return (action.title && { title: action.title }) || state
+      return { title: action.title || '' }
     default:
       return state
   }
@@ -54,7 +54,12 @@ export const Presentationform = () => {
   return (
     <div className='presentation-form'>
       <div className='label'>Title:</div>
-      <input type='text' defaultValue={state.title} onKeyUp={updateTitle} />
+      <input
+        type='text'
+        placeholder='Set the title'
+        defaultValue={state.title}
+        onKeyUp={updateTitle}
+      />
     </div>
   )
 }

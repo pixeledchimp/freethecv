@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  .form {
+    width: 20%;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    position: relative;
+    .close {
+      padding: 0.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    .form-block {
+      margin-bottom: 1rem;
+      text-align: left;
+      .label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+      input {
+        border: none;
+        padding: 0.5rem;
+        line-height: 1rem;
+        width: calc(100% - 2rem);
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .template {
+    background: green;
+    max-width: calc(100% - 20%);
+  }
+}
