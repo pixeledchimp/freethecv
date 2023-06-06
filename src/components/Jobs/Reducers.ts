@@ -1,9 +1,5 @@
-import { JobState, JobsActions } from './Actions'
-
-export interface JobsState {
-    title: string
-    jobs: JobState[]
-}
+import { JobsActions } from './Actions'
+import { JobState, JobsState } from './State'
 
 const initialJobsState: JobsState = {
     title: 'Jobs',

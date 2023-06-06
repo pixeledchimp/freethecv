@@ -1,12 +1,8 @@
-export interface JobState {
-    entity?: string
-    from?: string
-    until?: string
-    description?: string
-    location?: string
-    key: number
-}
+import { JobState } from './State'
 
+/**
+ * UPDATE TITLE
+ */
 export interface JobsUpdateTitleAction {
     type: 'JOBS_UPDATE_TITLE'
     title: string
@@ -19,6 +15,9 @@ export const JobsUpdateTitleActionCreator: (
     title,
 })
 
+/**
+ * ADD JOB
+ */
 export interface JobsAddJobAction {
     type: 'JOBS_ADD_JOB'
     job: JobState
@@ -32,6 +31,9 @@ export const JobsAddJobActionCreator: (job: JobState) => JobsAddJobAction = (
         job,
     } as const)
 
+/**
+ * REMOVE JOB
+ */
 export interface JobRemoveJobAction {
     type: 'JOBS_REMOVE_JOB'
     jobIndex: number

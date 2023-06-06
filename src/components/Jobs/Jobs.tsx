@@ -1,8 +1,9 @@
 import { useSelector } from 'react-redux'
 import './Jobs.scss'
 import { AppState } from '../../store/store'
-import { JobState, JobsUpdateTitleActionCreator } from './Actions'
 import { useDispatch } from 'react-redux'
+import { JobsUpdateTitleActionCreator } from './Actions'
+import { JobState } from './State'
 
 export const JobsForm = () => {
     const dispatch = useDispatch()
