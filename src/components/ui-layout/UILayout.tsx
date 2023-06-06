@@ -1,17 +1,17 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { AppState } from '../../store/store'
-import './UILayout.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useDispatch, useSelector } from 'react-redux';
+import { AppState } from '../../store/store';
+import './UILayout.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export interface UILayoutProps {
-  formElements?: JSX.Element[]
-  templateElements?: JSX.Element[]
+  formElements?: JSX.Element[];
+  templateElements?: JSX.Element[];
 }
 
 interface UILayoutHideFormAction {
-  type: 'UILAYOUT_TOGGLE_FORM'
-  hide: boolean
+  type: 'UILAYOUT_TOGGLE_FORM';
+  hide: boolean;
 }
 
 const UILayoutHideFormActionCreator: (
@@ -20,17 +20,17 @@ const UILayoutHideFormActionCreator: (
   ({
     type: 'UILAYOUT_TOGGLE_FORM',
     hide,
-  } as const)
+  } as const);
 
 export type UILayoutHideFormActions = ReturnType<
   typeof UILayoutHideFormActionCreator
->
+>;
 export interface UILayoutState {
-  hide: boolean
+  hide: boolean;
 }
 export const initialUILayoutHideFormActionState: UILayoutState = {
   hide: false,
-}
+};
 
 export const UILayoutActionsReducer = (
   state = initialUILayoutHideFormActionState,
@@ -40,25 +40,25 @@ export const UILayoutActionsReducer = (
     case 'UILAYOUT_TOGGLE_FORM':
       return {
         hide: action.hide || false,
-      }
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
 export const UILayout = (props: UILayoutProps) => {
-  const state = useSelector((appstate: AppState) => appstate.uiLayout)
-  const dispatch = useDispatch()
+  const state = useSelector((appstate: AppState) => appstate.uiLayout);
+  const dispatch = useDispatch();
 
   const hideForm = (e: React.MouseEvent<HTMLSpanElement>) => {
-    e.preventDefault()
-    dispatch(UILayoutHideFormActionCreator(true))
-  }
+    e.preventDefault();
+    dispatch(UILayoutHideFormActionCreator(true));
+  };
 
   const showForm = () => {
-    dispatch(UILayoutHideFormActionCreator(false))
-  }
+    dispatch(UILayoutHideFormActionCreator(false));
+  };
 
   return (
     <div className='container' onDoubleClick={showForm}>
@@ -84,5 +84,5 @@ export const UILayout = (props: UILayoutProps) => {
           ))}
       </div>
     </div>
-  )
-}
+  );
+};

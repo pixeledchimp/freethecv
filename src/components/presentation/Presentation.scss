@@ -1,0 +1,44 @@
+.presentation {
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  .photo {
+    background-color: #999;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    + span {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+
+      + p {
+        margin: auto;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.8em;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+.drop-zone {
+  padding: 1rem;
+  display: block;
+  background: #fff;
+  text-align: center;
+  color: #333;
+  &.dragging {
+    background: #ffee00;
+    color: #333;
+  }
+}

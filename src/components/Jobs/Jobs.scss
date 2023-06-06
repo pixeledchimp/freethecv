@@ -1,0 +1,26 @@
+.jobs-section {
+    padding: 1rem 0;
+    background-color: #f9f9f9;
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.job-model {
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    .entity {
+        margin-right: 1rem;
+        width: 20%;
+        .dates {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .description {
+        width: 80%;
+    }
+}
