@@ -36,17 +36,35 @@ export const JobsAddJobActionCreator: (job: JobState) => JobsAddJobAction = (
  */
 export interface JobRemoveJobAction {
     type: 'JOBS_REMOVE_JOB'
-    jobIndex: number
+    index: number
 }
 
 export const JobsRemoveJobActionCreator: (
-    jobIndex: number
-) => JobRemoveJobAction = (jobIndex) =>
+    index: number
+) => JobRemoveJobAction = (index) =>
     ({
         type: 'JOBS_REMOVE_JOB',
-        jobIndex,
+        index,
+    } as const)
+
+/**
+ * UPDATE JOB
+ */
+export interface JobUpdateJobAction {
+    type: 'JOBS_UPDATE_JOB'
+    job: JobState
+}
+
+export const JobsUpdateJobActionCreator: (
+    job: JobState
+) => JobUpdateJobAction = (job) =>
+    ({
+        type: 'JOBS_UPDATE_JOB',
+        job,
     } as const)
 
 export type JobsActions =
     | ReturnType<typeof JobsUpdateTitleActionCreator>
     | ReturnType<typeof JobsAddJobActionCreator>
+    | ReturnType<typeof JobsRemoveJobActionCreator>
+    | ReturnType<typeof JobsUpdateJobActionCreator>

@@ -4,7 +4,7 @@ export interface JobState {
     until?: string
     description?: string
     location?: string
-    key: number
+    index: number
 }
 
 export interface JobsState {
