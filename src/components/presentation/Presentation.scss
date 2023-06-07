@@ -16,6 +16,7 @@
 
   h1 {
     margin-bottom: 1rem;
+
     + span {
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-style: italic;
@@ -37,6 +38,7 @@
   background: #fff;
   text-align: center;
   color: #333;
+
   &.dragging {
     background: #ffee00;
     color: #333;

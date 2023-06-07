@@ -1,5 +1,5 @@
 import { JobsActions } from './Actions'
-import { JobState, JobsState } from './State'
+import { JobsState, JobState } from './State'
 
 const initialJobsState: JobsState = {
     title: 'Jobs',

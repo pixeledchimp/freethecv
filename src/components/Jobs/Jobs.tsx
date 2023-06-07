@@ -1,7 +1,6 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import './Jobs.scss'
 import { AppState } from '../../store/store'
-import { useDispatch } from 'react-redux'
 import { JobsUpdateTitleActionCreator } from './Actions'
 import { JobState } from './State'
 
@@ -35,6 +34,7 @@ export const Jobs = () => {
     return (
         <div className="jobs-section">
             <h1>{state.title}</h1>
+            <a className="pointer">Add Job</a>
             {state.jobs.map((j, i) => (
                 <Job {...j} key={i} />
             ))}

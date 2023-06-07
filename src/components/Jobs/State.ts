@@ -11,4 +11,3 @@ export interface JobsState {
     title: string
     jobs: JobState[]
 }
-
