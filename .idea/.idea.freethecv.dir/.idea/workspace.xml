@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="335bb425-196c-4b3c-9460-9c42ffbc52e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.freethecv.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.freethecv.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs/Actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs/Actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs/Jobs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs/Jobs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs/Jobs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs/Jobs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs/Reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs/Reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Jobs/State.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jobs/State.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui-layout/UILayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-layout/UILayout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686159947042</updated>
       <workItem from="1686159950855" duration="2856000" />
-      <workItem from="1686163258688" duration="5773000" />
+      <workItem from="1686163258688" duration="6849000" />
     </task>
     <servers />
   </component>

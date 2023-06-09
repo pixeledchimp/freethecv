@@ -52,7 +52,7 @@
   .template {
     margin: 0 auto;
     vertical-align: top;
-    width: calc(100% - 40%);
+    max-width: calc(100% - 40%);
 
     .view-block {
       padding: 1rem;
