@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="335bb425-196c-4b3c-9460-9c42ffbc52e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.freethecv.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.freethecv.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-layout/UILayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-layout/UILayout.scss" afterDir="false" />
-    </list>
+    <list default="true" id="335bb425-196c-4b3c-9460-9c42ffbc52e8" name="Changes" comment="Adding jobs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +83,16 @@
       <updated>1686159947042</updated>
       <workItem from="1686159950855" duration="2856000" />
       <workItem from="1686163258688" duration="6849000" />
+      <workItem from="1686287337789" duration="317000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding jobs">
+      <created>1686287569221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686287569221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +100,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Adding jobs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding jobs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
