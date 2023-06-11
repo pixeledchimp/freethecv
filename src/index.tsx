@@ -3,13 +3,27 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { configureStore } from '@reduxjs/toolkit'
-import { rootReducer } from './store/store'
+import {configureStore, Middleware} from '@reduxjs/toolkit'
+import {rootReducer} from './store/store'
 import { Provider } from 'react-redux'
+import {RestoreState, SaveState} from "./helpers/SaveAndRestore";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const middleware: Middleware = api => next => action => {
+    const response = next(action)
+    const afterState = api.getState()
+    SaveState(afterState)
+    return response
+}
 
-const store = configureStore({ reducer: rootReducer })
+const store = configureStore(
+    { 
+        reducer: rootReducer, 
+        preloadedState: RestoreState() || {}, 
+        middleware: (getDefaultMiddleware) => {
+            return getDefaultMiddleware().concat(middleware);
+        }
+    })
 
 root.render(
     <React.StrictMode>

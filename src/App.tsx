@@ -1,4 +1,4 @@
-import { Jobs, JobsForm } from './components/Jobs/Jobs'
+import { Jobs, JobsForm } from './components/jobs/Jobs'
 import {
     Presentation,
     Presentationform,

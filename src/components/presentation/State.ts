@@ -1,4 +1,6 @@
 // Props interface
+import {RestoreState} from "../../helpers/SaveAndRestore";
+
 export interface PresentationState {
     introduction: string
     subtitle: string
@@ -6,7 +8,7 @@ export interface PresentationState {
     photo?: string
 }
 
-export const initialPresentationComponentState: PresentationState = {
+export const initialPresentationComponentState: PresentationState = RestoreState()?.presentation || {
     title: 'Default Title',
     subtitle: 'Default subtitle',
     introduction:
