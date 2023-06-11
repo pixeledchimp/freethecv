@@ -8,7 +8,6 @@ import {
     JobsUpdateTitleActionCreator,
 } from './Actions'
 import { JobState } from './State'
-import { BlockList } from 'net'
 import React, { Fragment } from 'react'
 
 export const JobsForm = () => {

@@ -1,7 +1,8 @@
 import { JobsActions } from './Actions'
 import { JobsState, JobState } from './State'
+import {RestoreState} from "../../helpers/SaveAndRestore";
 
-const initialJobsState: JobsState = {
+const initialJobsState: JobsState = RestoreState()?.jobs || {
     title: 'Jobs',
     jobs: [] as JobState[],
 }

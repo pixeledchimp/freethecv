@@ -64,7 +64,7 @@ export const JobsUpdateJobActionCreator: (
     } as const)
 
 export type JobsActions =
-    | ReturnType<typeof JobsUpdateTitleActionCreator>
     | ReturnType<typeof JobsAddJobActionCreator>
-    | ReturnType<typeof JobsRemoveJobActionCreator>
     | ReturnType<typeof JobsUpdateJobActionCreator>
+    | ReturnType<typeof JobsRemoveJobActionCreator>
+    | ReturnType<typeof JobsUpdateTitleActionCreator>
