@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import {configureStore, applyMiddleware, Middleware} from '@reduxjs/toolkit'
-import {AppState, rootReducer} from './store/store'
+import {configureStore, Middleware} from '@reduxjs/toolkit'
+import {rootReducer} from './store/store'
 import { Provider } from 'react-redux'
 import {RestoreState, SaveState} from "./helpers/SaveAndRestore";
 
